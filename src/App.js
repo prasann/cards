@@ -3,13 +3,20 @@ import './App.css';
 
 class Card extends Component {
   render() {
-    <h1>Card</h1>
+    return <div>
+      <h1>Table</h1>
+      <h2>Tisch</h2>
+      <p> der Tisch </p>
+      <p>Tische</p>
+    </div>;
   }
 }
 
 class App extends Component {
   render() {
-    <Card></Card>
+    return <div className="container">
+      <Card></Card>
+    </div>
   }
 }
 
