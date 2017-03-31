@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import cardData from './data.json';
+import getCard from './shuffler';
 import './App.css';
 
 class Card extends Component {
@@ -15,9 +15,20 @@ class Card extends Component {
 }
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { card: getCard() };
+    this.next = this.next.bind(this);
+  }
+
+  next() {
+    this.setState({ card: getCard() });
+  }
+
   render() {
     return <div className="container">
-      <Card data={cardData[0]}/>
+      <Card data={this.state.card}/>
+      <button onClick={this.next}>Next</button>
     </div>
   }
 }
