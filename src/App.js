@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import cardData from './data.json';
 import './App.css';
 
 class Card extends Component {
@@ -16,7 +17,7 @@ class Card extends Component {
 class App extends Component {
   render() {
     return <div className="container">
-      <Card data={{ english: 'Table', deutsch: 'Tisch', gender: 'der tisch', plural: 'tische' }}/>
+      <Card data={cardData[0]}/>
     </div>
   }
 }
