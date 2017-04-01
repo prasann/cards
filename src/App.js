@@ -37,7 +37,7 @@ class Card extends Component {
   }
 
   render() {
-    return <div className="card">
+    return <div className="card offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
       <button onClick={this.toggleFlip}>Flip</button>
       <CardContent side={this.state.flipped} data={this.props.data}/>
     </div>;
@@ -58,7 +58,7 @@ class App extends Component {
   render() {
     return <div className="container">
       <Card data={this.state.card}/>
-      <button className="next" onClick={this.next}>Next</button>
+      {/*<button className="next" onClick={this.next}>Next</button>*/}
     </div>
   }
 }

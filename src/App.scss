@@ -1,20 +1,16 @@
+@import '_grids.scss';
+
+body{
+  font-family: sans-serif;
+}
+
 .container {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  vertical-align: middle;
-}
+  .card {
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 300px;
+    background: #dddddd;
+  }
 
-.card {
-  display: inline-block;
-  margin: 0 25%;
-  width: 250px;
-  height: 250px;
-  border: 1px solid #999999;
-}
-
-.next {
-  clear: both;
-  display: block;
-  margin: 0 48%;
 }
