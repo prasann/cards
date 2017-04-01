@@ -22,7 +22,7 @@ class BackContent extends Component {
 
 class CardContent extends Component {
   render() {
-    return this.props.side ? <FrontContent data={this.props.data}/> : <BackContent data={this.props.data}/>
+    return this.props.flipped ? <BackContent data={this.props.data}/> : <FrontContent data={this.props.data}/>
   }
 }
 class Card extends Component {
@@ -32,6 +32,10 @@ class Card extends Component {
     this.toggleFlip = this.toggleFlip.bind(this);
   }
 
+  componentWillReceiveProps() {
+    this.setState({ flipped: false })
+  }
+
   toggleFlip() {
     this.setState({ flipped: !this.state.flipped });
   }
@@ -39,7 +43,7 @@ class Card extends Component {
   render() {
     return <div className="card offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
       <button onClick={this.toggleFlip}>Flip</button>
-      <CardContent side={this.state.flipped} data={this.props.data}/>
+      <CardContent flipped={this.state.flipped} data={this.props.data}/>
     </div>;
   }
 }
@@ -58,7 +62,7 @@ class App extends Component {
   render() {
     return <div className="container">
       <Card data={this.state.card}/>
-      {/*<button className="next" onClick={this.next}>Next</button>*/}
+      <button className="next offset-lg-5 col-lg-2" onClick={this.next}>Next</button>
     </div>
   }
 }
