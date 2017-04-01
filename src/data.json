@@ -8,10 +8,10 @@
   },
   {
     "id": 2,
-    "english": "Table2",
-    "deutsch": "Tisch",
-    "gender": "der tisch",
-    "plural": "tische"
+    "english": "Specs",
+    "deutsch": "Brille",
+    "gender": "die Brille",
+    "plural": "Brillen"
   },
   {
     "id": 3,

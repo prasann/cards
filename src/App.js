@@ -2,14 +2,44 @@ import React, { Component } from 'react';
 import getCard from './shuffler';
 import './App.css';
 
-class Card extends Component {
+class FrontContent extends Component {
+  render() {
+    const data = this.props.data;
+    return <div><h1>{data.english}</h1></div>
+  }
+}
+
+class BackContent extends Component {
   render() {
     const data = this.props.data;
     return <div>
-      <h1>{data.english}</h1>
       <h2>{data.deutsch}</h2>
       <p>{data.gender}</p>
       <p>{data.plural}</p>
+    </div>
+  }
+}
+
+class CardContent extends Component {
+  render() {
+    return this.props.side ? <FrontContent data={this.props.data}/> : <BackContent data={this.props.data}/>
+  }
+}
+class Card extends Component {
+  constructor() {
+    super();
+    this.state = { flipped: false };
+    this.toggleFlip = this.toggleFlip.bind(this);
+  }
+
+  toggleFlip() {
+    this.setState({ flipped: !this.state.flipped });
+  }
+
+  render() {
+    return <div>
+      <CardContent side={this.state.flipped} data={this.props.data}/>
+      <button onClick={this.toggleFlip}>Flip</button>
     </div>;
   }
 }
