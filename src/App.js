@@ -5,14 +5,14 @@ import './App.css';
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
-    return <div><h1>{data.english}</h1></div>
+    return <div className="front"><h1>{data.english}</h1></div>
   }
 }
 
 class BackContent extends Component {
   render() {
     const data = this.props.data;
-    return <div>
+    return <div className="back">
       <h2>{data.deutsch}</h2>
       <p>{data.gender}</p>
       <p>{data.plural}</p>
@@ -20,11 +20,6 @@ class BackContent extends Component {
   }
 }
 
-class CardContent extends Component {
-  render() {
-    return this.props.flipped ? <BackContent data={this.props.data}/> : <FrontContent data={this.props.data}/>
-  }
-}
 class Card extends Component {
   constructor() {
     super();
@@ -41,9 +36,12 @@ class Card extends Component {
   }
 
   render() {
-    return <div className="card offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
-      <button onClick={this.toggleFlip}>Flip</button>
-      <CardContent flipped={this.state.flipped} data={this.props.data}/>
+    return <div onClick={this.toggleFlip}
+                className="card offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
+      <div className={`flipper ${(this.state.flipped ? 'flip' : '')}`}>
+        <FrontContent data={this.props.data}/>
+        <BackContent data={this.props.data}/>
+      </div>
     </div>;
   }
 }

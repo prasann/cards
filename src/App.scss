@@ -1,11 +1,12 @@
 @import '_grids.scss';
 
-body{
+body {
   font-family: sans-serif;
 }
 
 .container {
   .card {
+    cursor: pointer;
     text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
@@ -13,14 +14,43 @@ body{
     background: #dddddd;
   }
 
-  .next{
+  .next {
     height: 25px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 
-    &:focus{
+    &:focus {
       outline: none;
     }
+  }
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+
+  &.flip {
+    transform: rotateY(180deg);
+  }
+
+  .front, .back {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    transform: rotateY(180deg);
   }
 }
