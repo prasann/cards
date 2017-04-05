@@ -60,7 +60,7 @@ class App extends Component {
   render() {
     return <div className="container">
       <Card data={this.state.card}/>
-      <button className="next offset-lg-5 col-lg-2" onClick={this.next}>Next</button>
+      <button className="next offset-lg-5 col-lg-2" onClick={this.next}>Next </button>
     </div>
   }
 }

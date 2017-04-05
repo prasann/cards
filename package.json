@@ -21,6 +21,6 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "publish": "gh-pages -d build "
+    "publish": "timestamp=$(date \"+%d.%m.%y::%H:%M\") && gh-pages -d build -m 'Site Published on '$timestamp"
   }
 }
