@@ -37,8 +37,8 @@ class Card extends Component {
 
   render() {
     return <div onClick={this.toggleFlip}
-                className="card offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
-      <div className={`flipper ${(this.state.flipped ? 'flip' : '')}`}>
+                className="offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
+      <div className={`card flipper ${(this.state.flipped ? 'flip' : '')}`}>
         <FrontContent data={this.props.data}/>
         <BackContent data={this.props.data}/>
       </div>
