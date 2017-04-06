@@ -5,5 +5,5 @@ const randomNumber = (max, min) => {
 };
 
 export default function getCard() {
-  return cardData[randomNumber(5, 0)];
+  return cardData[randomNumber(11, 0)];
 }

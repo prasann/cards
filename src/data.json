@@ -1,43 +1,85 @@
 [
   {
     "id": 1,
-    "english": "Table",
-    "deutsch": "Tisch",
+    "english": "asdsdaasdas",
+    "deutsch": "asdsadasd",
     "gender": "der tisch",
     "plural": "tische"
   },
   {
     "id": 2,
+    "english": "asdasdasdas",
+    "deutsch": "asdsadas",
+    "gender": "die Brille",
+    "plural": "Brillen"
+  },
+  {
+    "id": 3,
+    "english": "adadazcxz",
+    "deutsch": "qwewq",
+    "gender": "der tisch",
+    "plural": "tische"
+  },
+  {
+    "id": 4,
+    "english": "aszasc",
+    "deutsch": "erty",
+    "gender": "der tisch",
+    "plural": "tische"
+  },
+  {
+    "id": 5,
+    "english": "popaopo",
+    "deutsch": "mkmxkd",
+    "gender": "der tisch",
+    "plural": "tische"
+  },
+  {
+    "id": 6,
+    "english": "321ndkkas",
+    "deutsch": "akdko2",
+    "gender": "der tisch",
+    "plural": "tische"
+  },
+  {
+    "id": 7,
+    "english": "asdmo12",
+    "deutsch": "Tisch",
+    "gender": "der tisch",
+    "plural": "tische"
+  },
+  {
+    "id": 8,
     "english": "Specs",
     "deutsch": "Brille",
     "gender": "die Brille",
     "plural": "Brillen"
   },
   {
-    "id": 3,
-    "english": "Table3",
-    "deutsch": "Tisch",
+    "id": 9,
+    "english": "12masmkas",
+    "deutsch": "askok1o2",
     "gender": "der tisch",
     "plural": "tische"
   },
   {
-    "id": 4,
-    "english": "Table4",
-    "deutsch": "Tisch",
+    "id": 10,
+    "english": "askd12",
+    "deutsch": "mjdnjg",
     "gender": "der tisch",
     "plural": "tische"
   },
   {
-    "id": 5,
-    "english": "Table5",
-    "deutsch": "Tisch",
+    "id": 11,
+    "english": "njfrj r",
+    "deutsch": "asdkj ",
     "gender": "der tisch",
     "plural": "tische"
   },
   {
-    "id": 6,
-    "english": "Table6",
-    "deutsch": "Tisch",
+    "id": 12,
+    "english": "012kdasd ",
+    "deutsch": "dssfg",
     "gender": "der tisch",
     "plural": "tische"
   }
