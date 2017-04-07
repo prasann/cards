@@ -2,20 +2,31 @@ import React, { Component } from 'react';
 import getCard from './shuffler';
 import './App.css';
 
+const genderColor = ({ gender }) => {
+  switch (gender.toUpperCase()) {
+    case 'M':
+      return 'blue';
+    case 'F':
+      return 'red';
+    default:
+      return 'green';
+  }
+};
+
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className="front"><h1>{data.english}</h1></div>
+    return <div className="front"><h1 className={genderColor(this.props.data)}>{data.english}</h1></div>
   }
 }
 
 class BackContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className="back">
+    return <div className={`back ${genderColor(this.props.data)}`}>
       <h2>{data.deutsch}</h2>
-      <p>{data.gender}</p>
       <p>{data.plural}</p>
+      <p>{data.description}</p>
     </div>
   }
 }
@@ -28,7 +39,7 @@ class Card extends Component {
   }
 
   componentWillReceiveProps() {
-    this.setState({ flipped: false })
+    this.setState({ flipped: false });
   }
 
   toggleFlip() {

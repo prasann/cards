@@ -11,13 +11,29 @@ body {
     border: 1px solid grey;
     border-radius: 5px;
     height: 300px;
+
+    h1.red{
+      color: red;
+    }
+    h1.green{
+      color: darkgreen;
+    }
+    h1.blue{
+      color: royalblue;
+    }
   }
 
   .next {
-    margin-top: 10px;
-    height: 25px;
+    background-color: #4CAF50; /* Green */
     border: none;
+    color: white;
+    padding: 8px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: 10px;
     border-radius: 5px;
 
     &:focus {
@@ -25,7 +41,7 @@ body {
     }
   }
 
-  .text-center{
+  .text-center {
     text-align: center;
   }
 }
@@ -57,7 +73,17 @@ body {
 
   .back {
     z-index: 1;
+    color: white;
     transform: rotateY(180deg);
     height: 100%;
+    &.red{
+      background: red;
+    }
+    &.green{
+      background: darkgreen;
+    }
+    &.blue{
+      background: royalblue;
+    }
   }
 }

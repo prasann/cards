@@ -3,84 +3,96 @@
     "id": 1,
     "english": "asdsdaasdas",
     "deutsch": "asdsadasd",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "m",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 2,
     "english": "asdasdasdas",
     "deutsch": "asdsadas",
-    "gender": "die Brille",
-    "plural": "Brillen"
+    "gender": "f",
+    "plural": "Brillen",
+    "description": "der ticje"
   },
   {
     "id": 3,
     "english": "adadazcxz",
     "deutsch": "qwewq",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "n",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 4,
     "english": "aszasc",
     "deutsch": "erty",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "n",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 5,
     "english": "popaopo",
     "deutsch": "mkmxkd",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "n",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 6,
     "english": "321ndkkas",
     "deutsch": "akdko2",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "f",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 7,
     "english": "asdmo12",
     "deutsch": "Tisch",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "m",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 8,
     "english": "Specs",
     "deutsch": "Brille",
-    "gender": "die Brille",
-    "plural": "Brillen"
+    "gender": "m",
+    "plural": "Brillen",
+    "description": "der ticje"
   },
   {
     "id": 9,
     "english": "12masmkas",
     "deutsch": "askok1o2",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "f",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 10,
     "english": "askd12",
     "deutsch": "mjdnjg",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "m",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 11,
     "english": "njfrj r",
     "deutsch": "asdkj ",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "f",
+    "plural": "tische",
+    "description": "der ticje"
   },
   {
     "id": 12,
     "english": "012kdasd ",
     "deutsch": "dssfg",
-    "gender": "der tisch",
-    "plural": "tische"
+    "gender": "f",
+    "plural": "tische",
+    "description": "der ticje"
   }
 ]
