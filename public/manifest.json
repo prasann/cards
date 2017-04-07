@@ -1,0 +1,13 @@
+{
+  "short_name": "Vokabeln Karten",
+  "name": "Vocabulary Cards for German",
+  "icons": [
+    {
+      "src": "flag.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "index.html?launcher=true"
+}
