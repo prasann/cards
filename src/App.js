@@ -37,7 +37,7 @@ class Card extends Component {
 
   render() {
     return <div onClick={this.toggleFlip}
-                className="offset-lg-5 col-lg-2 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
+                className="offset-lg-5 col-lg-2 offset-sm-2 col-sm-8">
       <div className={`card flipper ${(this.state.flipped ? 'flip' : '')}`}>
         <FrontContent data={this.props.data}/>
         <BackContent data={this.props.data}/>
@@ -59,8 +59,15 @@ class App extends Component {
 
   render() {
     return <div className="container">
-      <Card data={this.state.card}/>
-      <button className="next offset-lg-5 col-lg-2" onClick={this.next}>Next </button>
+      <div className="text-center offset-lg-2 col-lg-8 offset-sm-2 col-sm-8">
+        <h1>Vokabeln Karten</h1>
+      </div>
+      <div>
+        <Card data={this.state.card}/>
+      </div>
+      <div className="offset-lg-4 col-lg-4 offset-sm-2 col-sm-8">
+        <button className="next offset-lg-4 col-lg-4 offset-sm-1 col-sm-10" onClick={this.next}>Next</button>
+      </div>
     </div>
   }
 }
