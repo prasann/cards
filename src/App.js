@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import getCard from './shuffler';
+import shuffler from './shuffler';
 import './App.css';
 
 const genderColor = ({ gender }) => {
@@ -60,12 +60,12 @@ class Card extends Component {
 class App extends Component {
   constructor() {
     super();
-    this.state = { card: getCard() };
+    this.state = { card: shuffler.nextCard() };
     this.next = this.next.bind(this);
   }
 
   next() {
-    this.setState({ card: getCard() });
+    this.setState({ card: shuffler.nextCard() });
   }
 
   render() {
