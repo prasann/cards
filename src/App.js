@@ -48,9 +48,11 @@ class Card extends Component {
     this.toggleFlip = this.toggleFlip.bind(this);
   }
 
-  componentWillReceiveProps() {
+  componentWillReceiveProps(props) {
     this.setState({ flipped: false });
-    this.setState({ showData: this.props.data });
+    setTimeout(() => {
+      this.setState({ showData: props.data })
+    }, 200);
   }
 
   toggleFlip() {
@@ -84,9 +86,7 @@ class App extends Component {
       <div className="text-center offset-lg-2 col-lg-8 offset-sm-2 col-sm-8">
         <h1>Vokabeln Karten</h1>
       </div>
-      <div>
-        <Card data={this.state.card} flipped={false}/>
-      </div>
+      <Card data={this.state.card}/>
       <div className="offset-lg-4 col-lg-4 offset-sm-2 col-sm-8">
         <button className="next offset-lg-4 col-lg-4 offset-sm-1 col-sm-10" onClick={this.next}>Next</button>
       </div>
