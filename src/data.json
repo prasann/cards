@@ -1,98 +1,212 @@
 [
   {
-    "id": 1,
-    "english": "asdsdaasdas",
-    "deutsch": "asdsadasd",
-    "gender": "m",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Bett",
+    "en": "Bed",
+    "g": "N",
+    "pl": "Betten"
   },
   {
-    "id": 2,
-    "english": "asdasdasdas",
-    "deutsch": "asdsadas",
-    "gender": "f",
-    "plural": "Brillen",
-    "description": "der ticje"
+    "de": "Bild",
+    "en": "Frame",
+    "g": "N",
+    "pl": "Bilder"
   },
   {
-    "id": 3,
-    "english": "adadazcxz",
-    "deutsch": "qwewq",
-    "gender": "n",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Sessel",
+    "en": "ArmChair",
+    "g": "M",
+    "pl": "Sessel"
   },
   {
-    "id": 4,
-    "english": "aszasc",
-    "deutsch": "erty",
-    "gender": "n",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Lampe",
+    "en": "Lamp",
+    "g": "F",
+    "pl": "Lampen"
   },
   {
-    "id": 5,
-    "english": "popaopo",
-    "deutsch": "mkmxkd",
-    "gender": "n",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Stuhl",
+    "en": "Chair",
+    "g": "M",
+    "pl": "Stühle"
   },
   {
-    "id": 6,
-    "english": "321ndkkas",
-    "deutsch": "akdko2",
-    "gender": "f",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Sofa",
+    "en": "Sofa",
+    "g": "N",
+    "pl": "Sofas"
   },
   {
-    "id": 7,
-    "english": "asdmo12",
-    "deutsch": "Tisch",
-    "gender": "m",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Couch",
+    "en": "Sofa",
+    "g": "F",
+    "pl": "Couchs"
   },
   {
-    "id": 8,
-    "english": "Specs",
-    "deutsch": "Brille",
-    "gender": "m",
-    "plural": "Brillen",
-    "description": "der ticje"
+    "de": "Tisch",
+    "en": "Table",
+    "g": "M",
+    "pl": "Tische"
   },
   {
-    "id": 9,
-    "english": "12masmkas",
-    "deutsch": "askok1o2",
-    "gender": "f",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Schrank",
+    "en": "Cupboard",
+    "g": "M",
+    "pl": "Schränke"
   },
   {
-    "id": 10,
-    "english": "askd12",
-    "deutsch": "mjdnjg",
-    "gender": "m",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Teppich",
+    "en": "Carpet",
+    "g": "M",
+    "pl": "Teppiche"
   },
   {
-    "id": 11,
-    "english": "njfrj r",
-    "deutsch": "asdkj ",
-    "gender": "f",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Bleistift",
+    "en": "Pencil",
+    "g": "M",
+    "pl": "Bleistifte"
   },
   {
-    "id": 12,
-    "english": "012kdasd ",
-    "deutsch": "dssfg",
-    "gender": "f",
-    "plural": "tische",
-    "description": "der ticje"
+    "de": "Brille",
+    "en": "Spectacles",
+    "g": "F",
+    "pl": "Brillen"
+  },
+  {
+    "de": "Buch",
+    "en": "Book",
+    "g": "N",
+    "pl": "Bücher"
+  },
+  {
+    "de": "Flasche",
+    "en": "Bottle",
+    "g": "F",
+    "pl": "Flaschen"
+  },
+  {
+    "de": "Feuerzeug",
+    "en": "Lighter",
+    "g": "N",
+    "pl": "Feuerzeuge"
+  },
+  {
+    "de": "Fotoapparat",
+    "en": "Camera",
+    "g": "M",
+    "pl": "Fotoapparate"
+  },
+  {
+    "de": "Kette",
+    "en": "Chain",
+    "g": "F",
+    "pl": "Ketten"
+  },
+  {
+    "de": "Kugelschriber",
+    "en": "Ballpoint pen",
+    "g": "M",
+    "pl": "Kugelschreiber"
+  },
+  {
+    "de": "Schlüssel",
+    "en": "Key",
+    "g": "M",
+    "pl": "Schlüssel"
+  },
+  {
+    "de": "Tasche",
+    "en": "Bag",
+    "g": "F",
+    "pl": "Taschen"
+  },
+  {
+    "de": "Laptop",
+    "en": "Laptop",
+    "g": "M",
+    "pl": "Laptops"
+  },
+  {
+    "de": "Email",
+    "en": "Email",
+    "g": "F",
+    "pl": "EMail"
+  },
+  {
+    "de": "Handy",
+    "en": "MobilePhone",
+    "g": "N",
+    "pl": "Handys"
+  },
+  {
+    "de": "SMS",
+    "en": "SMS",
+    "g": "F",
+    "pl": "SMS"
+  },
+  {
+    "de": "Briefmarke",
+    "en": "Stamp",
+    "g": "F",
+    "pl": "Briefmarken"
+  },
+  {
+    "de": "Rechnung",
+    "en": "Bill",
+    "g": "F",
+    "pl": "Rechnungen"
+  },
+  {
+    "de": "Telefon",
+    "en": "Telephone",
+    "g": "N",
+    "pl": "Telefone"
+  },
+  {
+    "de": "Formular",
+    "en": "Form",
+    "g": "N",
+    "pl": "Formulare"
+  },
+  {
+    "de": "Drucker",
+    "en": "Printer",
+    "g": "M",
+    "pl": "Drucker"
+  },
+  {
+    "de": "Maus",
+    "en": "Mouse",
+    "g": "F",
+    "pl": "Mäuse"
+  },
+  {
+    "de": "Computer",
+    "en": "Computer",
+    "g": "M",
+    "pl": "Computer"
+  },
+  {
+    "de": "Stift",
+    "en": "Pen",
+    "g": "M",
+    "pl": "Stifte"
+  },
+  {
+    "de": "Notizbuch",
+    "en": "Notebook",
+    "g": "N",
+    "pl": "Notizbücher"
+  },
+  {
+    "de": "Kalender",
+    "en": "Calendar",
+    "g": "M",
+    "pl": "Kalender"
+  },
+  {
+    "de": "Bildschirm",
+    "en": "Monitor",
+    "g": "M",
+    "pl": "Bildschirme"
   }
 ]

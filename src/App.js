@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import shuffler from './shuffler';
 import './App.css';
 
-const genderColor = ({ gender }) => {
-  switch (gender.toUpperCase()) {
+const genderColor = ({ g }) => {
+  switch (g.toUpperCase()) {
     case 'M':
       return 'blue';
     case 'F':
@@ -13,10 +13,21 @@ const genderColor = ({ gender }) => {
   }
 };
 
+const genderForm = ({ g }) => {
+  switch (g.toUpperCase()) {
+    case 'M':
+      return 'der';
+    case 'F':
+      return 'die';
+    default:
+      return 'das';
+  }
+};
+
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className="front"><h1 className={genderColor(this.props.data)}>{data.english}</h1></div>
+    return <div className="front"><h1 className={genderColor(this.props.data)}>{data.en}</h1></div>
   }
 }
 
@@ -24,22 +35,22 @@ class BackContent extends Component {
   render() {
     const data = this.props.data;
     return <div className={`back ${genderColor(this.props.data)}`}>
-      <h2>{data.deutsch}</h2>
-      <p>{data.plural}</p>
-      <p>{data.description}</p>
+      <h2>{`${genderForm(this.props.data)} ${data.de}`}</h2>
+      <p>{`die ${data.pl}`}</p>
     </div>
   }
 }
 
 class Card extends Component {
-  constructor() {
+  constructor(props) {
     super();
-    this.state = { flipped: false };
+    this.state = { flipped: props.flipped, showData: props.data };
     this.toggleFlip = this.toggleFlip.bind(this);
   }
 
   componentWillReceiveProps() {
     this.setState({ flipped: false });
+    this.setState({ showData: this.props.data });
   }
 
   toggleFlip() {
@@ -50,8 +61,8 @@ class Card extends Component {
     return <div onClick={this.toggleFlip}
                 className="offset-lg-5 col-lg-2 offset-sm-2 col-sm-8">
       <div className={`card flipper ${(this.state.flipped ? 'flip' : '')}`}>
-        <FrontContent data={this.props.data}/>
-        <BackContent data={this.props.data}/>
+        <FrontContent data={this.state.showData}/>
+        <BackContent data={this.state.showData}/>
       </div>
     </div>;
   }
@@ -74,7 +85,7 @@ class App extends Component {
         <h1>Vokabeln Karten</h1>
       </div>
       <div>
-        <Card data={this.state.card}/>
+        <Card data={this.state.card} flipped={false}/>
       </div>
       <div className="offset-lg-4 col-lg-4 offset-sm-2 col-sm-8">
         <button className="next offset-lg-4 col-lg-4 offset-sm-1 col-sm-10" onClick={this.next}>Next</button>
