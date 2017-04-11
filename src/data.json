@@ -208,5 +208,41 @@
     "en": "Monitor",
     "g": "M",
     "pl": "Bildschirme"
+  },
+  {
+    "de": "Uhr",
+    "en": "Watch",
+    "g": "F",
+    "pl": "Uhren"
+  },
+  {
+    "de": "Schirm",
+    "en": "Umbrella",
+    "g": "M",
+    "pl": "Schirme"
+  },
+  {
+    "de": "Seife",
+    "en": "Soap",
+    "g": "F",
+    "pl": "Seifen"
+  },
+  {
+    "de": "Streichholz",
+    "en": "Matchstick",
+    "g": "N",
+    "pl": "Streichhölzer"
+  },
+  {
+    "de": "Geldbörse",
+    "en": "Purse",
+    "g": "F",
+    "pl": "Geldbörsen"
+  },
+  {
+    "de": "Termin",
+    "en": "Meeting",
+    "g": "M",
+    "pl": "Termine"
   }
 ]
