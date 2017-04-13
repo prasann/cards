@@ -2,41 +2,28 @@ import React, { Component } from 'react';
 import shuffler from './shuffler';
 import './App.css';
 
-const genderColor = ({ g }) => {
-  switch (g.toUpperCase()) {
-    case 'M':
-      return 'blue';
-    case 'F':
-      return 'red';
-    default:
-      return 'green';
-  }
+const presetData = {
+  'M': { color: 'blue', artikal: 'der' },
+  'F': { color: 'red', artikal: 'die' },
+  'N': { color: 'green', artikal: 'das' },
 };
 
-const genderForm = ({ g }) => {
-  switch (g.toUpperCase()) {
-    case 'M':
-      return 'der';
-    case 'F':
-      return 'die';
-    default:
-      return 'das';
-  }
-};
+const genderForm = ({ g }) => (presetData[g].artikal);
+const genderColor = ({ g }) => (presetData[g].color);
 
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className="front"><h1 className={genderColor(this.props.data)}>{data.en}</h1></div>
+    return <div className="front"><h1 style={{ color: genderColor(this.props.data) }}>{data.en}</h1></div>
   }
 }
 
 class BackContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className={`back ${genderColor(this.props.data)}`}>
+    return <div style={{ color: genderColor(this.props.data) }} className="back">
       <h2>{`${genderForm(this.props.data)} ${data.de}`}</h2>
-      <p>{`die ${data.pl}`}</p>
+      <p><i>pl: </i>{`${data.pl}`}</p>
     </div>
   }
 }
