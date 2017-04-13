@@ -20,11 +20,10 @@ function shuffle(array) {
 
 class Shuffler {
   constructor() {
-    console.time('shuffle');
+    console.time('shuffle-time');
     this.shuffledCards = shuffle(cardData);
     this.counter = 0;
-    console.timeEnd('shuffle');
-    console.log(cardData.length);
+    console.timeEnd('shuffle-time');
   }
 
   nextCard() {
@@ -33,6 +32,7 @@ class Shuffler {
       result = this.shuffledCards[this.counter];
       this.counter++;
     } else {
+      this.shuffledCards = shuffle(cardData);
       this.counter = 0;
       result = this.shuffledCards[this.counter];
     }
