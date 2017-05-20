@@ -90,7 +90,7 @@ class App extends Component {
   }
 
   toggleText(){
-    return this.state.en2de ? 'English <=> German' : 'German <=> English';
+    return this.state.en2de ? 'English <-> German' : 'Deutsche <-> German';
   }
 
   render() {
