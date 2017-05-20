@@ -13,11 +13,14 @@ const SLIDER_TIME_IN_MS = 500;
 const genderForm = ({ g }) => (presetData[g].artikal);
 const genderColor = ({ g }) => (presetData[g].color);
 
+const deData = (data) => (`${genderForm(data)} ${data.de}`);
+const enData = (data) => (data.en);
+
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
     return <div className={`front`} >
-      <h1>{data.en}</h1>
+      <h1>{this.props.en2de ? enData(data) : deData(data)}</h1>
       <div className="hintText" ><i>Tap the card to get info</i>
       </div>
     </div>
@@ -28,7 +31,7 @@ class BackContent extends Component {
   render() {
     const data = this.props.data;
     return <div className="back" >
-      <h2>{`${genderForm(this.props.data)} ${data.de}`}</h2>
+      <h2>{this.props.en2de ? deData(data) : enData(data)}</h2>
       <p><i>pl: </i>{`${data.pl}`}</p>
     </div>
   }
@@ -60,8 +63,8 @@ class Card extends Component {
                 style={{ color: genderColor(this.state.showData) }}
                 className={`${this.state.inTransit === true ? 'animate' : ''}`} >
       <div className={`card flipper ${(this.state.flipped ? 'flip' : '')}`} >
-        <FrontContent data={this.state.showData} />
-        <BackContent data={this.state.showData} />
+        <FrontContent data={this.state.showData} en2de={this.props.en2de}/>
+        <BackContent data={this.state.showData} en2de={this.props.en2de}/>
       </div>
     </div>;
   }
@@ -70,18 +73,31 @@ class Card extends Component {
 class App extends Component {
   constructor() {
     super();
-    this.state = { card: shuffler.nextCard() };
+    this.state = { card: shuffler.nextCard(), en2de: true };
     this.next = this.next.bind(this);
+    this.toggleLanguage = this.toggleLanguage.bind(this);
+    this.toggleText = this.toggleText.bind(this);
   }
 
-  next() {
+  next(e) {
     this.setState({ card: shuffler.nextCard() });
+    e.preventDefault();
+  }
+
+  toggleLanguage(e){
+    this.setState({ en2de : !this.state.en2de});
+    e.preventDefault();
+  }
+
+  toggleText(){
+    return this.state.en2de ? 'English <=> German' : 'German <=> English';
   }
 
   render() {
     return <div className="container" >
       <h1>Vokabeln Karten</h1>
-      <Card data={this.state.card} />
+      <a href="#" onClick={this.toggleLanguage}>{this.toggleText()}</a>
+      <Card data={this.state.card} en2de={this.state.en2de} />
       <button className="next" onClick={this.next} >Next</button>
     </div>
   }
