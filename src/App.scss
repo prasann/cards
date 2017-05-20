@@ -11,6 +11,7 @@ body {
     border: 1px solid grey;
     border-radius: 5px;
     height: 300px;
+    width: 240px;
   }
 
   .next {
@@ -75,12 +76,26 @@ body {
   }
 }
 
-.fadeIn {
+.animate {
   opacity: 1;
-  animation: fade 0.1s linear;
+  animation: slider 0.5s linear;
 }
 
-@keyframes fade {
-  0% { margin-left: 100px }
-  100% { margin-left: 0px }
+@keyframes slider {
+  0% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  25% {
+    margin-left: -200px;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 200px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
 }
