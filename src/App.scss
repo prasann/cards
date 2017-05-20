@@ -8,6 +8,15 @@ body {
   flex-direction: column;
   justify-content: center;
 
+  .hintText{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 55px;
+    color: grey;
+    font-size: 80%;
+  }
+
   .card {
     cursor: pointer;
     text-align: center;
@@ -15,6 +24,7 @@ body {
     border-radius: 5px;
     height: 300px;
     width: 240px;
+    margin-top: 10px;
   }
 
   .next {

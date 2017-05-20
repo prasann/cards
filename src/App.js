@@ -16,7 +16,11 @@ const genderColor = ({ g }) => (presetData[g].color);
 class FrontContent extends Component {
   render() {
     const data = this.props.data;
-    return <div className={`front`} ><h1>{data.en}</h1></div>
+    return <div className={`front`} >
+      <h1>{data.en}</h1>
+      <div className="hintText" ><i>Tap the card to get info</i>
+      </div>
+    </div>
   }
 }
 
@@ -76,15 +80,9 @@ class App extends Component {
 
   render() {
     return <div className="container" >
-      <div>
-        <h1>Vokabeln Karten</h1>
-      </div>
-      <div className="card-container" >
-        <Card data={this.state.card} />
-      </div>
-      <div >
-        <button className="next" onClick={this.next} >Next</button>
-      </div>
+      <h1>Vokabeln Karten</h1>
+      <Card data={this.state.card} />
+      <button className="next" onClick={this.next} >Next</button>
     </div>
   }
 }
