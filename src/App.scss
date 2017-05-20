@@ -1,10 +1,13 @@
-@import '_grids.scss';
-
 body {
   font-family: sans-serif;
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
   .card {
     cursor: pointer;
     text-align: center;
@@ -15,7 +18,7 @@ body {
   }
 
   .next {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 8px 5px;
@@ -26,14 +29,11 @@ body {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    width: 120px;
 
     &:focus {
       outline: none;
     }
-  }
-
-  .text-center {
-    text-align: center;
   }
 }
 

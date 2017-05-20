@@ -76,14 +76,14 @@ class App extends Component {
 
   render() {
     return <div className="container" >
-      <div className="text-center offset-lg-2 col-lg-8 offset-sm-2 col-sm-8" >
+      <div>
         <h1>Vokabeln Karten</h1>
       </div>
-      <div className="card-container col-lg-2 col-sm-8 offset-lg-5 offset-sm-2" >
+      <div className="card-container" >
         <Card data={this.state.card} />
       </div>
-      <div className="offset-lg-4 col-lg-4 offset-sm-2 col-sm-8" >
-        <button className="next offset-lg-4 col-lg-4 offset-sm-1 col-sm-10" onClick={this.next} >Next</button>
+      <div >
+        <button className="next" onClick={this.next} >Next</button>
       </div>
     </div>
   }
