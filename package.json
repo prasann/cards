@@ -1,7 +1,7 @@
 {
   "name": "vokabeln-karten",
   "version": "0.1.0",
-  "homepage": "/cards",
+  "homepage": "/",
   "private": true,
   "devDependencies": {
     "react": "^15.4.2",
